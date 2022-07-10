@@ -7,7 +7,7 @@
 body{
     background-color: black;
     font-family: Roboto, sans-sarif;
-  
+    
 }
 .nav-container{
     display: flex;
@@ -145,6 +145,9 @@ margin-bottom: 7rem;
  border-radius: 10px;
 }
 
+.article-item:hover{
+    box-shadow: rgb(255, 255, 255) 0px 12px 40px 4px;
+}
 .article-item h3{
     font-weight: 700;
 }
@@ -153,80 +156,168 @@ margin-bottom: 7rem;
 
 .about-section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 6rem;
+    /* position: relative;
+    left: 6rem; */
 }
 
+.sect-info a{
+    text-decoration: none;
+    outline: orangered 1px solid;
+}
 .about-section-left{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
 }
-
+.about-section-left>h1{
+    margin-bottom: 3.5rem;
+} 
 .about-section-right img{
-height: 350px;
+border-radius: 15px;
+width: 270px;
+height: 455px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.details{
+    position: relative;
+    left: 13rem;
+}
 
 .details-heading{
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+    position: relative;
+   
 }
 
 .detail-cards{
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 200px));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(3, minmax(50px, 250px));
+    grid-gap: 3rem;
+    margin-bottom: 8rem;
+    width: 100%;
 }
 
 .card-1{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 .card-2{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 .card-3{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 .card-4{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 .card-5{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 .card-6{
     border: white solid 1px;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 15px;
     background-color: white;
     color: black;
 }
+
+.project-1{
+    margin-bottom: 11rem;
+}
+.project-1>h1{
+    position: relative;
+    left: 13rem;
+    margin-bottom: 4rem;
+}
+.project-1-container, .project-2{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.project-1-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-1-left img,.project-2-right img{
+    height: 267px;
+    width: 400px;
+    border-radius: 15px;
+}
+.project-1-right, .project-2-left{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1rem;
+}
+.content, .project-1-favicon{
+    display: flex;
+    gap: 1rem;
+}
+
+.project-2{
+    display: flex;
+}
+
+.project-2-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 8rem;
+}
+
+.git-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15rem;
+}
+.git-button a{
+text-decoration: none;
+width: 350px;
+border: 1px solid white;
+padding: 10px 60px 10px 60px;
+border-radius: 15px;
+background-color: white;
+color: black;
+
+}
+
+footer{
+    background-color: white;
+}
+.myfoot{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 50px 0px;
+}
+
+.myfoot h2{
+    margin-right: auto;
+}
+.myfoot h2, h3{
+    color: black;
+}
+/* making this responsive */
+
+@media max
